@@ -1,332 +1,102 @@
-/* font's */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap'); /* 'Hachi Maru Pop', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /* 'Fredoka One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap'); /* 'Spartan', sans-serif; */
 
-
-::-webkit-scrollbar{
-    background: whitesmoke;
-    border-radius: 8px;
-    width: 6px;
-}
-::-webkit-scrollbar-thumb{
-    background: rgba(102, 0, 255, 1);
-    border-radius: 8px;
-}
+/* =================================================================================================================================== */
 body{
-    background-color: #fff;
+    background-color: #18181c;
+    height: 100%;
     margin: 0;
-    overflow: visible;
 }
-
-#kadirfi-loader{
-    z-index: 999;
-    transition: 400ms all;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
+*{
+    box-sizing: border-box;
 }
-#kadirfi-loader > #kadirfi-loader-text{
-    position: relative;
-    top: 45%;
+/* Css Start */
+#card
+{
+    padding: 7px;
+    margin: 15px;
+    overflow: hidden;
+}
+#card > #card-kadirfi
+{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+    background: ghostwhite;
+    width: 960px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
-    transition: 400ms all;
-}
-#kadirfi-loader > #kadirfi-loader-text h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: center;
-    font-size: 60px;
-}
-
-/* KadirFi Start */
-#kadirfi{
-    font: 600;
-}
-
-/* Header Start */
-
-#header{
-    background-color: #fff;
-    padding: 10px;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    z-index: 1;
-}
-#header h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: lighter;
-    font-size: 50px;
-    text-align: center;
-    line-height: 1;
-    color: #444;
-}
-#header p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color:rgba(102, 0, 255, 1);
-    line-height: 2.5;
-}
-#header a{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #555;
-    text-decoration: none;
-    transition: 350ms all;
-}
-#header a:hover{
-    opacity: .5;
-}
-#header hr{
-    width: 5px;
-    height: 5px;
-    border-radius: 500%;
-    background: silver;
-    border: none;
-    display: inline-block;
-    margin: 5px;
-}
-
-/* About Card */
-#about{
-    padding: 5px;
-    margin-top: 25px;
-}
-#about > #about-card > #about-card-setting{
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 1.5px red;
     overflow: hidden;
 }
-#about > #about-card > #about-card-setting > #about-card-1{
-    display: flex;
+#card > #card-kadirfi > #kadirfi > img
+{
+    border-radius: 0px;
+    height: auto;
 }
-#about > #about-card > #about-card-setting > #about-card-1 > div{
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px rgba(102, 0, 255, 1);
-    transition: 350ms all;
-    flex: 1;
-}
-#about > #about-card > #about-card-setting > #about-card-1 > div h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: center;
-    line-height: 1;
-}
-#about > #about-card > #about-card-setting > #about-card-1 > div hr{
-    width: 6px;
-    height: 6px;
-    background: rgba(102, 0, 255, 1);
-    border-radius: 500%;
-    margin: 5px;
-    display: inline-block;
-}
-#about > #about-card > #about-card-setting > #about-card-1 > div p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1;
-}
-/* 2 */
-#about > #about-card > #about-card-setting > #about-card-2{
-    display: flex;
-}
-#about > #about-card > #about-card-setting > #about-card-2 > div{
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px rgba(102, 0, 255, 1);
-    transition: 350ms all;
-    flex: 1;
-}
-#about > #about-card > #about-card-setting > #about-card-2 > div h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: center;
-    line-height: 1;
-}
-#about > #about-card > #about-card-setting > #about-card-2 > div hr{
-    width: 6px;
-    height: 6px;
-    background: rgba(102, 0, 255, 1);
-    border-radius: 500%;
-    margin: 5px;
-    display: inline-block;
-}
-#about > #about-card > #about-card-setting > #about-card-2 > div p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1;
-}
-
-/* Projeler css */
-#projeler{
-    padding: 5px;
-    margin-top: 25px;
-}
-#projeler > #proje-hand-1 > div{
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px rgba(102, 0, 255, 1);
-    transition: 350ms all;
-    width: 900px;
-    display: block;
-    float: left;
-}
-#projeler > #proje-hand-1 > div h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: left;
-}
-#projeler > #proje-hand-1 > div p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: left;
-}
-#projeler > #proje-hand-1 > div img{
-    width: 250px;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 5px;
-    float: left;
-    overflow: hidden;
-}
-
-/* 2 */
-
-#projeler > #proje-hand-2 > div{
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px rgba(102, 0, 255, 1);
-    transition: 350ms all;
-    float: right;
-    width: 900px;
-}
-#projeler > #proje-hand-2 > div h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: right;
-}
-#projeler > #proje-hand-2 > div p{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bolder;
-    color: #444;
-    text-align: right;
-}
-#projeler > #proje-hand-2 > div img{
-    width: 230px;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 5px;
-    float: right;
-    overflow: hidden;
-}
-
-/* footer */
-#footer{
-    border-radius: 8px;
-    padding: 10px;
-    margin: 20px;
-    overflow: hidden;
-    transition: 350ms all;
-}
-#footer > #copyright-text h1{
-    font-family: 'Ubuntu', sans-serif;
+#card > #card-kadirfi > #kadirfi > h1
+{
+    font-family: 'Spartan', sans-serif;
     font-weight: bolder;
     color: #333;
-    text-align: center;
-    line-height: 1;
+    position: relative;
+    left: 15px;
 }
-#footer > #copyright-text h4{
-    font-family: 'Ubuntu', sans-serif;
+#card > #card-kadirfi > #kadirfi > p
+{
+    font-family: 'Spartan', sans-serif;
     font-weight: bolder;
-    color: silver;
-    opacity: 1;
-    text-align: center;
-    font-size: 18px;
-    font-stretch: extra-condensed;
+    color: #333;
+    position: relative;
+    left: 15px;
 }
-
-/* hover projeler
-#projeler > #proje-hand-1 > div:hover{
-    transform: scale(.9);
+#card > #card-kadirfi > #kadirfi > a > i
+{
+    font-size: x-large;
+    position: relative;
+    left: 12px;
+    color: #333;
+    text-decoration: none;
+    margin: 5px;
+    transition: 250ms linear all;
 }
-#projeler > #proje-hand-2 > div:hover{
-    transform: scale(.9);
+#card > #card-kadirfi > #kadirfi > a > i:hover
+{
+    color: #777;
 }
-#about > #about-card > #about-card-setting > #about-card-1 > div:hover{
-    transform: scale(.9);
-}
-#about > #about-card > #about-card-setting > #about-card-2 > div:hover{
-    transform: scale(.9);
-} */
-
-
 
 /* Responsive */
-@media screen and (max-width: 800px){
-    #about > #about-card > #about-card-setting > #about-card-1{
-        display: initial;
-        float:
-    }
-    #about > #about-card > #about-card-setting > #about-card-1 > div{
-        flex: initial;
+
+@media screen and (max-width: 700px)
+{
+    #card > #card-kadirfi
+    {
         width: auto;
+        height: 650;
     }
-    #about > #about-card > #about-card-setting > #about-card-2{
-        display: initial;
+    #card > #card-kadirfi > #kadirfi h1
+    {
+        position: relative;
+        top: 15px;
+        left: 10px;
     }
-    #about > #about-card > #about-card-setting > #about-card-2 > div{
-        flex: initial;
-        width: auto;
+    #card > #card-kadirfi > #kadirfi p
+    {
+        position: relative;
+        top: 15px;
+        left: 10px;
     }
-    #projeler > #proje-hand-1 > div img{
-        float: initial;
-        margin: 0 auto;
-        display: block;
+    #card > #card-kadirfi > #kadirfi > a > i
+    {
+        position: relative;
+        top: 15px;
+        left: 8px;
     }
-    #projeler > #proje-hand-2 > div h1{
-        text-align: left;
-    }
-    #projeler > #proje-hand-2 > div p{
-        text-align: left;
-    }
-    #projeler > #proje-hand-1 > div{
-        float: initial;
-        width: auto;
-    }
-    #projeler > #proje-hand-2 > div img{
-        float: initial;
-        margin: 0 auto;
-        display: block;
-    }
-    #projeler > #proje-hand-2 > div h1{
-        text-align: left;
-    }
-    #projeler > #proje-hand-2 > div p{
-        text-align: left;
-    }
-    #projeler > #proje-hand-2 > div{
-        float: initial;
-        width: auto;
+    #card > #card-kadirfi > #kadirfi-profile-photo
+    {
+        width: 100%;
     }
 }
